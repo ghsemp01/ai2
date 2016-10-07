@@ -15,11 +15,12 @@
 	<nav>
     <div class="nav-wrapper green">
        <a href="index.html" class="brand-logo">App Inventor</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="example1.html">Hello World</a></li>
         <li><a href="example2.html">QR Scanner</a></li>
         <li><a href="example3.html">Car Racing</a></li>
       </ul>
+    </div>
     </div>
   </nav>
   	<div id="main_container">
@@ -30,7 +31,7 @@
 	  			<div class="row">
 	  				<div class="col m8">
 	  					 <div class="card-image">
-			              <img src="images/example1/{{$index + 1}}.png">
+			              <img src="images/example2/{{$index + 1}}.png">
 			              <span class="card-title">Step {{$index + 1}}</span>
 			            </div>
 	  				</div>
@@ -56,9 +57,9 @@
   		var vm = new Vue({
   			el:"#main_container",
   			data:{
-  				title:'Mandatory Hello World App',
+  				title:'QR Scanner',
   				steps:[
-  					{message:'Click the Start Project Button'},
+  					{message:'Click start oroject and enter the name of your app'},
   					{message:'Enter Name of the project and click OK'},
   					{message:'You will now see your project in the list. Click it to navigate to the design view.'},
 					{message:'This will be your working area.'},
@@ -71,7 +72,7 @@
 					{message:'Click text under Built-in'},
 					{message:'Drag the empty string block and put it in label1 block and type HELLO WORLD'},
   				],
-  				end_message: 'You can now test and run your first android application.'
+  				end_message: 'You can know scan a QR code anytime and anywhere using the app YOU created.'
   			}
   		});
   </script>
